@@ -5,7 +5,6 @@ const JugadorSchema = new mongoose.Schema({
     cedula:{
         type:String,
         unique:true,
-        minLength:1,
         maxLength:10,
         required:true,
         trim:true
@@ -15,7 +14,7 @@ const JugadorSchema = new mongoose.Schema({
         type:String,
         unique:false,
         minLength:1,
-        maxLength:30,
+        maxLength:40,
         required:true,
         trim:true
     },
@@ -24,7 +23,7 @@ const JugadorSchema = new mongoose.Schema({
         type:String,
         unique:false,
         minLength:1,
-        maxLength:30,
+        maxLength:40,
         required:true,
         trim:true
     },
